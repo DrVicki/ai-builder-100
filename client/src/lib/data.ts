@@ -6,6 +6,7 @@ export interface Topic {
   title: string;
   type: 'video' | 'reading' | 'exercise' | 'quiz';
   duration: string;
+  videoUrl?: string; // YouTube embed URL for video/exercise topics
 }
 
 export interface Module {
@@ -41,13 +42,13 @@ export const MODULES: Module[] = [
     image:
       'https://d2xsxph8kpxj0f.cloudfront.net/310519663629670019/7jkvNcR3wFqQGyjiBuyQFW/module-01-TNzhM6UAjodPQ4wXw4D9HR.webp',
     topics: [
-      { id: 1, title: 'What Is AI? Definitions and Mental Models', type: 'video', duration: '30 min' },
-      { id: 2, title: 'AI as a Human Amplifier', type: 'video', duration: '35 min' },
+      { id: 1, title: 'What Is AI? Definitions and Mental Models', type: 'video', duration: '30 min', videoUrl: 'https://www.youtube.com/embed/ad79nYk2keg' },
+      { id: 2, title: 'AI as a Human Amplifier', type: 'video', duration: '35 min', videoUrl: 'https://www.youtube.com/embed/5dZ_lvDgevk' },
       { id: 3, title: 'Problem Framing for AI Solutions', type: 'reading', duration: '25 min' },
-      { id: 4, title: 'Identifying AI Opportunities in Real Contexts', type: 'video', duration: '40 min' },
+      { id: 4, title: 'Identifying AI Opportunities in Real Contexts', type: 'video', duration: '40 min', videoUrl: 'https://www.youtube.com/embed/qYNweeDHiyU' },
       { id: 5, title: 'When Not to Use AI', type: 'reading', duration: '20 min' },
-      { id: 6, title: 'Case Study: AI in Healthcare Triage', type: 'video', duration: '35 min' },
-      { id: 7, title: 'Hands-On: Problem Framing Workshop', type: 'exercise', duration: '45 min' },
+      { id: 6, title: 'Case Study: AI in Healthcare Triage', type: 'video', duration: '35 min', videoUrl: 'https://www.youtube.com/embed/2ePf9rue1Ao' },
+      { id: 7, title: 'Hands-On: Problem Framing Workshop', type: 'exercise', duration: '45 min', videoUrl: 'https://www.youtube.com/embed/aircAruvnKk' },
       { id: 8, title: 'Module Assessment', type: 'quiz', duration: '20 min' },
     ],
     learningOutcomes: [
@@ -75,13 +76,13 @@ export const MODULES: Module[] = [
     image:
       'https://d2xsxph8kpxj0f.cloudfront.net/310519663629670019/7jkvNcR3wFqQGyjiBuyQFW/module-02-59jTRsqAskwZPLNStD6dod.webp',
     topics: [
-      { id: 1, title: 'A Taxonomy of AI: Narrow, General, and Generative', type: 'video', duration: '35 min' },
-      { id: 2, title: 'Recommendation Systems: How Netflix and Spotify Work', type: 'video', duration: '40 min' },
+      { id: 1, title: 'A Taxonomy of AI: Narrow, General, and Generative', type: 'video', duration: '35 min', videoUrl: 'https://www.youtube.com/embed/oV74Najm6Nc' },
+      { id: 2, title: 'Recommendation Systems: How Netflix and Spotify Work', type: 'video', duration: '40 min', videoUrl: 'https://www.youtube.com/embed/n3RKsY2H-NE' },
       { id: 3, title: 'Voice Assistants and Natural Language Interfaces', type: 'reading', duration: '25 min' },
-      { id: 4, title: 'Computer Vision in Consumer Products', type: 'video', duration: '35 min' },
+      { id: 4, title: 'Computer Vision in Consumer Products', type: 'video', duration: '35 min', videoUrl: 'https://www.youtube.com/embed/OcycT1Jwsns' },
       { id: 5, title: 'Predictive AI: From Fraud Detection to Navigation', type: 'reading', duration: '30 min' },
-      { id: 6, title: 'Generative AI in Creative Tools', type: 'video', duration: '40 min' },
-      { id: 7, title: 'Hands-On: AI Audit of Your Daily Apps', type: 'exercise', duration: '50 min' },
+      { id: 6, title: 'Generative AI in Creative Tools', type: 'video', duration: '40 min', videoUrl: 'https://www.youtube.com/embed/X-AWdfSFCHQ' },
+      { id: 7, title: 'Hands-On: AI Audit of Your Daily Apps', type: 'exercise', duration: '50 min', videoUrl: 'https://www.youtube.com/embed/kTPNI7-CkKs' },
       { id: 8, title: 'Module Assessment', type: 'quiz', duration: '20 min' },
     ],
     learningOutcomes: [
@@ -109,13 +110,13 @@ export const MODULES: Module[] = [
     image:
       'https://d2xsxph8kpxj0f.cloudfront.net/310519663629670019/7jkvNcR3wFqQGyjiBuyQFW/module-03-cq2jLsrjFkmStQVkatjcxs.webp',
     topics: [
-      { id: 1, title: 'Anatomy of a Production AI System', type: 'video', duration: '40 min' },
-      { id: 2, title: 'Data Pipelines and Model Lifecycle', type: 'video', duration: '45 min' },
+      { id: 1, title: 'Anatomy of a Production AI System', type: 'video', duration: '40 min', videoUrl: 'https://www.youtube.com/embed/trg3YkCsjqE' },
+      { id: 2, title: 'Data Pipelines and Model Lifecycle', type: 'video', duration: '45 min', videoUrl: 'https://www.youtube.com/embed/Ys3lfQDqzvI' },
       { id: 3, title: 'Bias in AI: Sources, Types, and Consequences', type: 'reading', duration: '35 min' },
-      { id: 4, title: 'Transparency and Explainability in AI', type: 'video', duration: '40 min' },
+      { id: 4, title: 'Transparency and Explainability in AI', type: 'video', duration: '40 min', videoUrl: 'https://www.youtube.com/embed/UZDiGooFs54' },
       { id: 5, title: 'Accountability Frameworks for AI Teams', type: 'reading', duration: '30 min' },
-      { id: 6, title: 'Case Study: Algorithmic Bias in Hiring Tools', type: 'video', duration: '35 min' },
-      { id: 7, title: 'Hands-On: Ethical Risk Assessment Exercise', type: 'exercise', duration: '55 min' },
+      { id: 6, title: 'Case Study: Algorithmic Bias in Hiring Tools', type: 'video', duration: '35 min', videoUrl: 'https://www.youtube.com/embed/TWWsW1w-BVo' },
+      { id: 7, title: 'Hands-On: Ethical Risk Assessment Exercise', type: 'exercise', duration: '55 min', videoUrl: 'https://www.youtube.com/embed/gV0_raKR2UQ' },
       { id: 8, title: 'Module Assessment', type: 'quiz', duration: '20 min' },
     ],
     learningOutcomes: [
@@ -143,13 +144,13 @@ export const MODULES: Module[] = [
     image:
       'https://d2xsxph8kpxj0f.cloudfront.net/310519663629670019/7jkvNcR3wFqQGyjiBuyQFW/module-04-UnBMd4yueuZh72TYsvVx4D.webp',
     topics: [
-      { id: 1, title: 'Responsible AI Principles: A Practitioner\'s Framework', type: 'video', duration: '35 min' },
-      { id: 2, title: 'Fairness Metrics and How to Measure Them', type: 'video', duration: '40 min' },
+      { id: 1, title: 'Responsible AI Principles: A Practitioner\'s Framework', type: 'video', duration: '35 min', videoUrl: 'https://www.youtube.com/embed/aGwYtUzMQUk' },
+      { id: 2, title: 'Fairness Metrics and How to Measure Them', type: 'video', duration: '40 min', videoUrl: 'https://www.youtube.com/embed/jIXIuYdnyyk' },
       { id: 3, title: 'Writing Model Cards and Datasheets', type: 'reading', duration: '30 min' },
-      { id: 4, title: 'AI Impact Assessments in Organisations', type: 'video', duration: '40 min' },
+      { id: 4, title: 'AI Impact Assessments in Organisations', type: 'video', duration: '40 min', videoUrl: 'https://www.youtube.com/embed/59bMh59JQDo' },
       { id: 5, title: 'Human-in-the-Loop Design Patterns', type: 'reading', duration: '30 min' },
-      { id: 6, title: 'Communicating AI Limitations to Stakeholders', type: 'video', duration: '35 min' },
-      { id: 7, title: 'Hands-On: Drafting a Model Card', type: 'exercise', duration: '50 min' },
+      { id: 6, title: 'Communicating AI Limitations to Stakeholders', type: 'video', duration: '35 min', videoUrl: 'https://www.youtube.com/embed/Gg-w_n9NJIE' },
+      { id: 7, title: 'Hands-On: Drafting a Model Card', type: 'exercise', duration: '50 min', videoUrl: 'https://www.youtube.com/embed/oIiRgmuiVCg' },
       { id: 8, title: 'Module Assessment', type: 'quiz', duration: '20 min' },
     ],
     learningOutcomes: [
@@ -177,13 +178,13 @@ export const MODULES: Module[] = [
     image:
       'https://d2xsxph8kpxj0f.cloudfront.net/310519663629670019/7jkvNcR3wFqQGyjiBuyQFW/module-05-C2VwzGHjpTfAAELefqBR78.webp',
     topics: [
-      { id: 1, title: 'What Are AI Agents? Architecture and Capabilities', type: 'video', duration: '40 min' },
-      { id: 2, title: 'Tool Use and Function Calling in LLMs', type: 'video', duration: '45 min' },
+      { id: 1, title: 'What Are AI Agents? Architecture and Capabilities', type: 'video', duration: '40 min', videoUrl: 'https://www.youtube.com/embed/F8NKVhkZZWI' },
+      { id: 2, title: 'Tool Use and Function Calling in LLMs', type: 'video', duration: '45 min', videoUrl: 'https://www.youtube.com/embed/pVPp4ldOzJU' },
       { id: 3, title: 'Workflow Orchestration: Patterns and Frameworks', type: 'reading', duration: '35 min' },
-      { id: 4, title: 'Multi-Agent Systems and Coordination', type: 'video', duration: '45 min' },
+      { id: 4, title: 'Multi-Agent Systems and Coordination', type: 'video', duration: '45 min', videoUrl: 'https://www.youtube.com/embed/Tl7WCqTDPjE' },
       { id: 5, title: 'Governing Autonomous AI: Risks and Safeguards', type: 'reading', duration: '30 min' },
-      { id: 6, title: 'Case Study: AI Agents in Business Process Automation', type: 'video', duration: '40 min' },
-      { id: 7, title: 'Hands-On: Building a Simple AI Workflow', type: 'exercise', duration: '60 min' },
+      { id: 6, title: 'Case Study: AI Agents in Business Process Automation', type: 'video', duration: '40 min', videoUrl: 'https://www.youtube.com/embed/sal78ACtGTc' },
+      { id: 7, title: 'Hands-On: Building a Simple AI Workflow', type: 'exercise', duration: '60 min', videoUrl: 'https://www.youtube.com/embed/Wjrdr0NU4Sk' },
       { id: 8, title: 'Module Assessment', type: 'quiz', duration: '25 min' },
     ],
     learningOutcomes: [

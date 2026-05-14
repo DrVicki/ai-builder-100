@@ -1,7 +1,7 @@
 import { useProgress } from '@/contexts/ProgressContext';
 import { Link, useLocation } from 'wouter';
 import { useState } from 'react';
-import { Menu, X, BarChart2, Zap } from 'lucide-react';
+import { Menu, X, BarChart2, Zap, Award } from 'lucide-react';
 
 export default function Navbar() {
   const [location] = useLocation();
@@ -57,8 +57,14 @@ export default function Navbar() {
           >
             FAQ
           </button>
+          <Link href="/certificate">
+            <div className="flex items-center gap-2 px-4 py-2 rounded-md text-white/60 hover:text-white transition-colors text-sm font-['DM_Sans']">
+              <Award size={14} />
+              <span>Certificate</span>
+            </div>
+          </Link>
           <Link href="/dashboard">
-            <div className="ml-2 flex items-center gap-2 px-4 py-2 rounded-md border border-white/20 text-white/80 hover:border-[oklch(0.55_0.22_260)] hover:text-white transition-all text-sm font-['DM_Sans']">
+            <div className="ml-1 flex items-center gap-2 px-4 py-2 rounded-md border border-white/20 text-white/80 hover:border-[oklch(0.55_0.22_260)] hover:text-white transition-all text-sm font-['DM_Sans']">
               <BarChart2 size={14} />
               <span>My Progress</span>
               {overall.percent > 0 && (
@@ -83,6 +89,12 @@ export default function Navbar() {
           <button onClick={() => scrollTo('modules')} className="text-left px-3 py-2 text-white/70 hover:text-white text-sm rounded-md hover:bg-white/5">Modules</button>
           <button onClick={() => scrollTo('curriculum')} className="text-left px-3 py-2 text-white/70 hover:text-white text-sm rounded-md hover:bg-white/5">Curriculum</button>
           <button onClick={() => scrollTo('faq')} className="text-left px-3 py-2 text-white/70 hover:text-white text-sm rounded-md hover:bg-white/5">FAQ</button>
+          <Link href="/certificate">
+            <div className="flex items-center gap-2 px-3 py-2 text-white/70 hover:text-white text-sm rounded-md hover:bg-white/5" onClick={() => setMobileOpen(false)}>
+              <Award size={14} />
+              Certificate
+            </div>
+          </Link>
           <Link href="/dashboard">
             <div className="flex items-center gap-2 px-3 py-2 text-white/70 hover:text-white text-sm rounded-md hover:bg-white/5" onClick={() => setMobileOpen(false)}>
               <BarChart2 size={14} />

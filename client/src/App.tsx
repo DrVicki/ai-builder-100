@@ -8,6 +8,7 @@ import { ProgressProvider } from "./contexts/ProgressContext";
 import Home from "./pages/Home";
 import ModulePage from "./pages/ModulePage";
 import Dashboard from "./pages/Dashboard";
+import Certificate from "./pages/Certificate";
 
 function Router() {
   return (
@@ -15,6 +16,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/module/:slug" component={ModulePage} />
       <Route path="/dashboard" component={Dashboard} />
+      <Route path="/certificate" component={Certificate} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
