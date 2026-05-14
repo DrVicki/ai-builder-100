@@ -1,0 +1,35 @@
+{
+  "build_command": "pnpm run build",
+  "capabilities": [],
+  "dev_command": "pnpm run dev",
+  "env_vars": {},
+  "experiments": null,
+  "git_remote": {
+    "repo_url": "s3://vida-prod-gitrepo/webdev-git/310519663629670019/7jkvNcR3wFqQGyjiBuyQFW",
+    "access_key_id": "ASIAZV3A2ECZAC5KKF53",
+    "secret_access_key": "KnA1d9Kp1mQlQqIdou3DR4VY7pi6uZpZa8vY8aV+",
+    "session_token": "IQoJb3JpZ2luX2VjEJn//////////wEaCXVzLWVhc3QtMSJHMEUCIQCFMgpRLKkYpmyO1audVPr4fbvpNirzCucNrKUE6FlYQwIgWkv+xk6PN7eHu/ztbSJgHQLccqlX+Sxoq4vEDxmRO8Aq9gMIYRAEGgw2NjUzODYwOTg4NjYiDAOVpdof5kBx0G/Z8yrTA2e+grQqwDJW05BLJyP9bE/RPWmufEaoN4VuP8ygtMNzXHun8dZ0rQ5gnB3Uqd87KA0MsWaAkMQoDaqzBn9r0ieRTuqth2IO0QF82ChoeMJR8vKKsofwdVXTC3QtZV4kYpa0uXGbjzXrLHjchg7vk37yI6uzXlaz0F2nzx2u3X+PpUuU0hP7BcdLrERNpvC+eEaHqHUBzIA21H6qzehEYxwIKASj8UHRZGWZPKwKV43yp3IlqCHZ8tTBSH3MYgI+oFoqH/6yW8Xg9nPzbGUDrAsezrz348ObY8XLhnEruj4VQPwsPQN5qNob+G8Uin4RnUXIqlfsunU9lCNtfcsC3BY15JUDe8lfDVXceLS+yl2znClj3KwH8w2zM7IS+pr96UTeWwJtQaVXzFq/GBL7v4iYW4yxwDp5d1y42AC7HsmszEbtSOIfUTYpIkcgzAXFAR8ggwNJXFEpg1rELmXfIsSWStAC8RwifNW+lolCxO5QTGy7femOCURHnzkRujNTFqICKu4HSnOJr/1CkIs6+4ASbcV34laamhkqqf3MJEdyM7Wu0RPqz0fvp8AV1W1kM7r/KsHh7MIeQkbcaG8WGWWERAzxU8tAtpc1YKCTFMXxW1UrMNLrl9AGOp0BiNOKjjKI/O576I7bg7txWKJsjLQ09bI8SKHGh7+pn8QPWe8vAlcmQDgQycIRMUTuaoJlTMXeLW10hn0tnugOsMTTnfF4FVdGB/Dxy3zRSjI/6OIdoU+W60paHKGYbdzn32YT4AhGzHunMJr333FQqqcs3amff9T5mw02Ypu08rIK6bZUq4VMZ401fq+b73zoJ53oXG4Dz7CHyJEvvA==",
+    "expiration": "2026-05-15T04:18:26.000Z"
+  },
+  "name": "ai-builder-100",
+  "path": "/home/ubuntu/ai-builder-100",
+  "port": 3000,
+  "secrets": {
+    "BUILT_IN_FORGE_API_KEY": "8Nhs3UUKtonMg2UWyfothk",
+    "BUILT_IN_FORGE_API_URL": "https://forge.manus.ai",
+    "JWT_SECRET": "QR8oEBc5V6na4hebXcH7Vt",
+    "OAUTH_SERVER_URL": "https://api.manus.im",
+    "OWNER_NAME": "Vicki Bealman",
+    "OWNER_OPEN_ID": "crfWUaBWozSud7NP4MeZxY",
+    "VITE_ANALYTICS_ENDPOINT": "https://manus-analytics.com",
+    "VITE_ANALYTICS_WEBSITE_ID": "86812505-cdbd-4468-8605-fe58aca7bbf4",
+    "VITE_APP_ID": "7jkvNcR3wFqQGyjiBuyQFW",
+    "VITE_APP_LOGO": "",
+    "VITE_APP_TITLE": "AI Builder 100 — Foundations for Application",
+    "VITE_FRONTEND_FORGE_API_KEY": "U2yuDYitP6LtMQ3PsVFQXL",
+    "VITE_FRONTEND_FORGE_API_URL": "https://forge.manus.ai",
+    "VITE_OAUTH_PORTAL_URL": "https://manus.im"
+  },
+  "template_id": "web-static",
+  "test_command": "pnpm test"
+}
