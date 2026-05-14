@@ -462,6 +462,25 @@ export default function ModulePage() {
               </Link>
             )}
 
+            {/* Instructor */}
+            <div className="rounded-lg border border-white/10 bg-[oklch(0.20_0.04_255)] p-5">
+              <h3 className="font-['Barlow_Condensed'] font-700 text-white text-base mb-3 flex items-center gap-2" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
+                <span className="text-white/40 text-xs">Instructor</span>
+              </h3>
+              <div className="flex items-center gap-3">
+                <div
+                  className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 border border-[oklch(0.55_0.22_260/40%)]"
+                  style={{ background: 'linear-gradient(135deg, oklch(0.35 0.15 260), oklch(0.25 0.10 270))' }}
+                >
+                  <span className="font-['Barlow_Condensed'] font-800 text-white text-sm" style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 800 }}>VB</span>
+                </div>
+                <div>
+                  <p className="text-sm font-['Barlow_Condensed'] font-700 text-white" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>Dr. Vicki Bealman</p>
+                  <p className="text-xs text-[oklch(0.65_0.22_260)] font-['DM_Sans']">AI Educator &amp; Practitioner</p>
+                </div>
+              </div>
+            </div>
+
             {/* Certificate link */}
             <Link href="/certificate">
               <div className="rounded-lg border border-[oklch(0.85_0.25_135/25%)] bg-[oklch(0.85_0.25_135/5%)] p-5 hover:border-[oklch(0.85_0.25_135/50%)] transition-colors group">

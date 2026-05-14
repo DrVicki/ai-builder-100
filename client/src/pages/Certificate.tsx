@@ -102,17 +102,20 @@ function CertificateCard({ name, date }: { name: string; date: string }) {
               {date}
             </div>
           </div>
-          <div className="text-center">
-            <div className="text-xs text-white/30 font-['DM_Sans'] mb-1">Issued by</div>
-            <div className="flex items-center gap-1.5 justify-center">
-              <div className="w-5 h-5 rounded bg-[oklch(0.55_0.22_260)] flex items-center justify-center">
-                <span className="text-white text-[9px] font-bold">AI</span>
+            <div className="text-center">
+              <div className="text-xs text-white/30 font-['DM_Sans'] mb-1">Issued by</div>
+              <div className="flex flex-col items-center gap-0.5">
+                <div className="flex items-center gap-1.5">
+                  <div className="w-5 h-5 rounded bg-[oklch(0.55_0.22_260)] flex items-center justify-center">
+                    <span className="text-white text-[9px] font-bold">AI</span>
+                  </div>
+                  <span className="text-xs font-['Barlow_Condensed'] font-700 text-white/60" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
+                    AI Builder 100
+                  </span>
+                </div>
+                <span className="text-[10px] text-white/35 font-['DM_Sans']">Dr. Vicki Bealman</span>
               </div>
-              <span className="text-xs font-['Barlow_Condensed'] font-700 text-white/60" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-                AI Builder 100
-              </span>
             </div>
-          </div>
           <div className="text-right">
             <div className="text-xs text-white/30 font-['DM_Sans'] mb-0.5">Credential ID</div>
             <div className="text-xs font-['Barlow_Condensed'] font-600 text-white/50 font-mono" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>

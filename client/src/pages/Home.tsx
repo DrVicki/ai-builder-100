@@ -2,7 +2,7 @@
 // Home page: Hero, Stats, Curriculum, FAQ, CTA, Footer
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'wouter';
-import { ChevronDown, ChevronRight, Play, BookOpen, Dumbbell, ClipboardCheck, Star, Users, Layers, CheckCircle2 } from 'lucide-react';
+import { ChevronDown, ChevronRight, Play, BookOpen, Dumbbell, ClipboardCheck, Star, Users, Layers, CheckCircle2, GraduationCap, Linkedin, Globe } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import { MODULES, FAQ_ITEMS, STATS } from '@/lib/data';
 
@@ -152,6 +152,17 @@ export default function Home() {
           >
             <span className="w-1.5 h-1.5 rounded-full bg-[oklch(0.85_0.25_135)] animate-pulse" />
             Virtual Bootcamp · Foundations for Application
+          </div>
+
+          {/* Instructor byline */}
+          <div className="animate-fade-up flex items-center gap-3 mb-6">
+            <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[oklch(0.55_0.22_260)] to-[oklch(0.45_0.22_280)] flex items-center justify-center border-2 border-[oklch(0.55_0.22_260/50%)] flex-shrink-0">
+              <GraduationCap size={16} className="text-white" />
+            </div>
+            <div>
+              <p className="text-xs text-white/40 font-['DM_Sans'] leading-none mb-0.5">Instructor</p>
+              <p className="text-sm font-['Barlow_Condensed'] font-700 text-white" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>Dr. Vicki Bealman</p>
+            </div>
           </div>
 
           {/* Headline */}
@@ -318,6 +329,115 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── INSTRUCTOR ───────────────────────────────────────────────────────── */}
+      <section id="instructor" className="py-24">
+        <div className="container">
+          <Reveal className="mb-4">
+            <span className="text-xs font-['Barlow_Condensed'] font-600 uppercase tracking-widest text-[oklch(0.55_0.22_260)]">
+              Your Instructor
+            </span>
+          </Reveal>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Text */}
+            <div>
+              <Reveal delay={80}>
+                <h2
+                  className="font-['Barlow_Condensed'] font-800 text-white mb-2"
+                  style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 800, fontSize: 'clamp(2rem, 5vw, 3.5rem)', lineHeight: 1 }}
+                >
+                  Dr. Vicki Bealman
+                </h2>
+              </Reveal>
+              <Reveal delay={120}>
+                <p className="text-[oklch(0.65_0.22_260)] font-['DM_Sans'] text-sm mb-6">
+                  AI Educator &amp; Practitioner · Virtual Bootcamp · Foundations for Application
+                </p>
+              </Reveal>
+              <Reveal delay={160}>
+                <p className="text-white/60 font-['DM_Sans'] text-sm leading-relaxed mb-6">
+                  Dr. Vicki Bealman brings deep expertise in applied AI education, helping learners at every level build a confident, practical understanding of how artificial intelligence shapes the world around them. Her curriculum bridges the gap between abstract AI concepts and real-world application — equipping students with the frameworks, vocabulary, and critical thinking skills to engage with AI responsibly and effectively.
+                </p>
+              </Reveal>
+              <Reveal delay={200}>
+                <p className="text-white/50 font-['DM_Sans'] text-sm leading-relaxed mb-8">
+                  Through AI Builder 100, Dr. Bealman guides learners from foundational problem-solving principles through to the emerging world of AI agents and automation — all grounded in ethical awareness and practical application.
+                </p>
+              </Reveal>
+              <Reveal delay={240}>
+                <div className="flex flex-wrap gap-3">
+                  {['Applied AI', 'Responsible AI', 'AI Ethics', 'Workflow Automation', 'AI Education'].map((tag) => (
+                    <span key={tag} className="px-3 py-1.5 rounded-full text-xs font-['DM_Sans'] bg-[oklch(0.55_0.22_260/12%)] text-[oklch(0.75_0.15_260)] border border-[oklch(0.55_0.22_260/20%)]">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </Reveal>
+            </div>
+
+            {/* Right: Card */}
+            <Reveal delay={120}>
+              <div className="relative">
+                {/* Glow */}
+                <div className="absolute -inset-4 bg-[oklch(0.55_0.22_260/8%)] rounded-2xl blur-2xl" />
+                <div className="relative rounded-xl border border-[oklch(0.55_0.22_260/30%)] bg-[oklch(0.20_0.04_255)] overflow-hidden">
+                  {/* Top accent bar */}
+                  <div className="h-1 bg-gradient-to-r from-[oklch(0.55_0.22_260)] to-[oklch(0.85_0.25_135)]" />
+                  <div className="p-8">
+                    {/* Avatar */}
+                    <div className="flex items-center gap-5 mb-6">
+                      <div
+                        className="w-20 h-20 rounded-full flex items-center justify-center flex-shrink-0 border-2 border-[oklch(0.55_0.22_260/50%)]"
+                        style={{ background: 'linear-gradient(135deg, oklch(0.35 0.15 260), oklch(0.25 0.10 270))' }}
+                      >
+                        <span
+                          className="font-['Barlow_Condensed'] font-800 text-white text-3xl"
+                          style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 800 }}
+                        >
+                          VB
+                        </span>
+                      </div>
+                      <div>
+                        <h3
+                          className="font-['Barlow_Condensed'] font-700 text-white text-xl"
+                          style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700 }}
+                        >
+                          Dr. Vicki Bealman
+                        </h3>
+                        <p className="text-sm text-[oklch(0.65_0.22_260)] font-['DM_Sans'] mt-0.5">AI Educator &amp; Practitioner</p>
+                      </div>
+                    </div>
+
+                    {/* Stats */}
+                    <div className="grid grid-cols-3 gap-4 mb-6">
+                      {[['1,200+', 'Learners'], ['5', 'Modules'], ['40+', 'Hours']].map(([val, lbl]) => (
+                        <div key={lbl} className="text-center p-3 rounded-lg bg-white/5 border border-white/10">
+                          <div
+                            className="font-['Barlow_Condensed'] font-800 text-[oklch(0.65_0.22_260)] text-xl"
+                            style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 800 }}
+                          >
+                            {val}
+                          </div>
+                          <div className="text-xs text-white/40 font-['DM_Sans']">{lbl}</div>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Quote */}
+                    <blockquote className="border-l-2 border-[oklch(0.55_0.22_260/50%)] pl-4">
+                      <p className="text-sm text-white/60 font-['DM_Sans'] leading-relaxed italic">
+                        "AI literacy is not a technical skill — it is a human one. My goal is to help every learner build the confidence to engage with AI thoughtfully, critically, and creatively."
+                      </p>
+                      <footer className="text-xs text-white/30 font-['DM_Sans'] mt-2">— Dr. Vicki Bealman</footer>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
       {/* ── FAQ ──────────────────────────────────────────────────────────────── */}
       <section id="faq" className="py-24 bg-[oklch(0.19_0.04_255)]">
         <div className="container max-w-3xl">
@@ -415,7 +535,7 @@ export default function Home() {
             </span>
           </div>
           <p className="text-xs text-white/30 font-['DM_Sans']">
-            © 2025 AI Builder 100 — Foundations for Application. All rights reserved.
+            © 2025 AI Builder 100 — Foundations for Application. Instructor: Dr. Vicki Bealman.
           </p>
           <div className="flex items-center gap-4 text-xs text-white/40 font-['DM_Sans']">
             <button className="hover:text-white/70 transition-colors">Privacy Policy</button>
