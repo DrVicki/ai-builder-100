@@ -291,6 +291,50 @@
     clip-path: polygon(38% 0, 100% 0, 100% 100%, 0 100%);
   }
   .signal-tab-panel:hover::before { width: 9rem; transition: width 220ms cubic-bezier(0.23, 1, 0.32, 1); }
+  .signal-file-tab {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 !important;
+    clip-path: polygon(0 0, calc(100% - 0.62rem) 0, 100% 0.62rem, 100% 100%, 0 100%);
+  }
+  .signal-file-tab::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.8rem;
+    height: 0.18rem;
+    background: oklch(0.55 0.22 260);
+  }
+  .signal-file-tab::after {
+    content: '';
+    position: absolute;
+    right: -0.7rem;
+    top: 0;
+    height: 100%;
+    width: 1.8rem;
+    pointer-events: none;
+    background: repeating-linear-gradient(135deg, oklch(0.55 0.22 260 / 33%) 0 3px, transparent 3px 8px);
+    clip-path: polygon(45% 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .signal-command-center {
+    box-shadow: -0.6rem 0 0 oklch(0.55 0.22 260 / 22%), 0 24px 64px oklch(0 0 0 / 24%);
+    border-color: oklch(0.55 0.22 260 / 38%) !important;
+  }
+  .signal-helper-panel {
+    border-left: 2px solid oklch(0.55 0.22 260 / 72%);
+  }
+  .signal-wordmark {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-stretch: condensed;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+  }
+  .signal-mark {
+    border-radius: 0 !important;
+    clip-path: polygon(14% 0, 100% 0, 86% 100%, 0 100%);
+  }
 
   /* Scrollbar */
   ::-webkit-scrollbar { width: 6px; }

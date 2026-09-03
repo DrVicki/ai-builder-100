@@ -148,3 +148,6 @@ Bold Geometric Futurism with deep navy, electric blue, diagonal geometry, and st
 - Every major page uses at least one diagonal, tabbed, or stripe-based geometric device; conventional rounded panels remain secondary.
 - Barlow Condensed ExtraBold is the dominant voice for headlines, numerals, labels, and calls to action, with hierarchy driven by scale, weight, and left alignment.
 - Lime is reserved for primary actions, completion/progress signals, and key proof points; electric blue remains the structural color.
+- Core workflow surfaces use a visible file-tab, diagonal cut, or stripe treatment; conventional rectangular cards remain secondary support surfaces.
+- The AI Builder 100 wordmark uses condensed uppercase typography and an angular signal-bolt mark to reinforce the bootcamp’s constructivist-digital identity.
+- Action copy stays concise and progress-oriented: build the reflection, preview the packet, submit with confidence.

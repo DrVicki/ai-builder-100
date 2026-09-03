@@ -25,14 +25,14 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/">
           <div className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-md bg-[oklch(0.55_0.22_260)] flex items-center justify-center animate-pulse-glow">
+            <div className="signal-mark w-8 h-8 bg-[oklch(0.55_0.22_260)] flex items-center justify-center animate-pulse-glow">
               <Zap size={16} className="text-white" />
             </div>
             <span
-              className="font-['Barlow_Condensed'] font-800 text-xl tracking-wide text-white"
+              className="signal-wordmark text-xl text-white"
               style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 800 }}
             >
-              AI Builder 100
+              AI Builder <span className="text-[oklch(0.65_0.22_260)]">100</span>
             </span>
           </div>
         </Link>
