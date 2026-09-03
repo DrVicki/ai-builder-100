@@ -6,10 +6,11 @@
   "experiments": null,
   "git_remote": {
     "repo_url": "s3://vida-prod-gitrepo/webdev-git/310519663629670019/7jkvNcR3wFqQGyjiBuyQFW",
-    "access_key_id": "ASIAZV3A2ECZAC5KKF53",
-    "secret_access_key": "KnA1d9Kp1mQlQqIdou3DR4VY7pi6uZpZa8vY8aV+",
-    "session_token": "IQoJb3JpZ2luX2VjEJn//////////wEaCXVzLWVhc3QtMSJHMEUCIQCFMgpRLKkYpmyO1audVPr4fbvpNirzCucNrKUE6FlYQwIgWkv+xk6PN7eHu/ztbSJgHQLccqlX+Sxoq4vEDxmRO8Aq9gMIYRAEGgw2NjUzODYwOTg4NjYiDAOVpdof5kBx0G/Z8yrTA2e+grQqwDJW05BLJyP9bE/RPWmufEaoN4VuP8ygtMNzXHun8dZ0rQ5gnB3Uqd87KA0MsWaAkMQoDaqzBn9r0ieRTuqth2IO0QF82ChoeMJR8vKKsofwdVXTC3QtZV4kYpa0uXGbjzXrLHjchg7vk37yI6uzXlaz0F2nzx2u3X+PpUuU0hP7BcdLrERNpvC+eEaHqHUBzIA21H6qzehEYxwIKASj8UHRZGWZPKwKV43yp3IlqCHZ8tTBSH3MYgI+oFoqH/6yW8Xg9nPzbGUDrAsezrz348ObY8XLhnEruj4VQPwsPQN5qNob+G8Uin4RnUXIqlfsunU9lCNtfcsC3BY15JUDe8lfDVXceLS+yl2znClj3KwH8w2zM7IS+pr96UTeWwJtQaVXzFq/GBL7v4iYW4yxwDp5d1y42AC7HsmszEbtSOIfUTYpIkcgzAXFAR8ggwNJXFEpg1rELmXfIsSWStAC8RwifNW+lolCxO5QTGy7femOCURHnzkRujNTFqICKu4HSnOJr/1CkIs6+4ASbcV34laamhkqqf3MJEdyM7Wu0RPqz0fvp8AV1W1kM7r/KsHh7MIeQkbcaG8WGWWERAzxU8tAtpc1YKCTFMXxW1UrMNLrl9AGOp0BiNOKjjKI/O576I7bg7txWKJsjLQ09bI8SKHGh7+pn8QPWe8vAlcmQDgQycIRMUTuaoJlTMXeLW10hn0tnugOsMTTnfF4FVdGB/Dxy3zRSjI/6OIdoU+W60paHKGYbdzn32YT4AhGzHunMJr333FQqqcs3amff9T5mw02Ypu08rIK6bZUq4VMZ401fq+b73zoJ53oXG4Dz7CHyJEvvA==",
-    "expiration": "2026-05-15T04:18:26.000Z"
+    "access_key_id": "ASIAZV3A2ECZKHLNT7SP",
+    "secret_access_key": "IRjwNgcumoudQeoSJ2US7x4GrytrtqfOLIelZFNS",
+    "session_token": "IQoJb3JpZ2luX2VjEBgaCXVzLWVhc3QtMSJHMEUCIQCjKZcKyK5hujtYMauwh9n7MIyaOvWVxf8zBl5XUh/MWQIgPnyvGwInmMxpV8FJpDeiL5oEL6orSr9sZ5r6JZzrnPsq/wMI4P//////////ARAEGgw2NjUzODYwOTg4NjYiDE3mJblKjYdBlb4hlirTA5S76OlUtfDYasc4IM1lnJKcn0hs0rXlrioumliQm8mMx1w3Xk9M9I/Gm4dsRPExiVEWaJFlBfbx5DdkUp+W99LBgQD/sKYPGE9u9thiMdHVQVur3mdGCrkFIQfCj4X5PqhEw9BSbwKEAc8a4Q2Eio+TIs7GC6EmBGs+ZEXy6GvoFsy6ijRcsKVWRRMXorzSuE/Zv0WsyqK57/svc0mo4qjUcAuIHwSvkYX0sAujg0kRG21aAV24fwzCbh8zbE4aWz42jqe69dxJwxmsHHZf5fPoPguwv2X0KO++ux1cCyaHSg8b9QJScwYxT/4B4NVTF+8zB7AShclQupUfTBt0m9+QnNHhceR6kgwXgldPF7VKnl04orVvxjKHk+Pb6FVSHLmOPlKBnqLFv8HqrW5i7WYwJje6SdKUz8mzZJEXYf7kwxV2c9idexMXVh6MUqi/DKPICc+ePgae8lrnj72Ly5uvfFmswEo6f8ieCqn0veptJSE6YQZFTraGKsyWNOeGviDVTGMgUgg9qTwcGIWX0XCbA5PIgdxcTFB0mZ4jww76TeCZ8ohdwbKFXSH+SHq0aFEHMk0kOfAJqWZpJlX0685oIxuW5BdQD64Hp9sZlh5qUC1UMI+h5tQGOp0B0ocQ8ZblfNEZ7DQTCkpw4iaqIUbOil3yeicI96QDSq3tOAd2+IXJHqoiOxEgZ6lPkiih0DseXCzTHjVTKcAwbu/NCTjHUB34i3OCvVzKfBFgfX9urW+NOVoq0ITX1gnXDLjEJaJv3mY86kdBDMs9fLRys7K/k1iX8DnVhJuWnIAJGvCT2ntEjBAp7qOcpwbibr+vFrzmA90p4D0DPw==",
+    "expiration": "2026-09-04T03:21:51.000Z",
+    "backend": "GIT_BACKEND_S3"
   },
   "name": "ai-builder-100",
   "path": "/home/ubuntu/ai-builder-100",
