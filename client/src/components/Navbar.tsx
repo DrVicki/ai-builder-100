@@ -1,7 +1,7 @@
 import { useProgress } from '@/contexts/ProgressContext';
 import { Link, useLocation } from 'wouter';
 import { useState } from 'react';
-import { Menu, X, BarChart2, Zap, Award } from 'lucide-react';
+import { Menu, X, BarChart2, Zap, Award, NotebookPen } from 'lucide-react';
 
 export default function Navbar() {
   const [location] = useLocation();
@@ -57,6 +57,12 @@ export default function Navbar() {
           >
             FAQ
           </button>
+          <Link href="/notes">
+            <div className="flex items-center gap-2 px-3 py-2 rounded-md text-white/60 hover:text-white transition-colors text-sm font-['DM_Sans']">
+              <NotebookPen size={14} />
+              <span>Notes</span>
+            </div>
+          </Link>
           <Link href="/certificate">
             <div className="flex items-center gap-2 px-4 py-2 rounded-md text-white/60 hover:text-white transition-colors text-sm font-['DM_Sans']">
               <Award size={14} />
@@ -89,6 +95,12 @@ export default function Navbar() {
           <button onClick={() => scrollTo('modules')} className="text-left px-3 py-2 text-white/70 hover:text-white text-sm rounded-md hover:bg-white/5">Modules</button>
           <button onClick={() => scrollTo('curriculum')} className="text-left px-3 py-2 text-white/70 hover:text-white text-sm rounded-md hover:bg-white/5">Curriculum</button>
           <button onClick={() => scrollTo('faq')} className="text-left px-3 py-2 text-white/70 hover:text-white text-sm rounded-md hover:bg-white/5">FAQ</button>
+          <Link href="/notes">
+            <div className="flex items-center gap-2 px-3 py-2 text-white/70 hover:text-white text-sm rounded-md hover:bg-white/5" onClick={() => setMobileOpen(false)}>
+              <NotebookPen size={14} />
+              Notes
+            </div>
+          </Link>
           <Link href="/certificate">
             <div className="flex items-center gap-2 px-3 py-2 text-white/70 hover:text-white text-sm rounded-md hover:bg-white/5" onClick={() => setMobileOpen(false)}>
               <Award size={14} />

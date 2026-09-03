@@ -37,12 +37,12 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="min-h-screen bg-[oklch(0.16_0.04_255)] text-white">
+    <div className="signal-page min-h-screen bg-[oklch(0.16_0.04_255)] text-white">
       <Navbar />
 
-      <div className="container pt-28 pb-24">
+      <div className="signal-content container pt-28 pb-24">
         {/* Header */}
-        <div className="mb-10">
+        <div className="signal-heading mb-11">
           <div className="text-xs font-['Barlow_Condensed'] font-600 uppercase tracking-widest text-[oklch(0.55_0.22_260)] mb-3">
             AI Builder 100 · Foundations for Application
           </div>
@@ -83,7 +83,7 @@ export default function Dashboard() {
         </div>
 
         {/* Overall progress bar */}
-        <div className="rounded-lg border border-white/10 bg-[oklch(0.20_0.04_255)] p-6 mb-10">
+        <div className="signal-tab-panel signal-stripe border border-white/10 bg-[oklch(0.20_0.04_255)] p-6 mb-10">
           <div className="flex items-center justify-between mb-4">
             <h2
               className="font-['Barlow_Condensed'] font-700 text-white text-lg"
@@ -145,12 +145,14 @@ export default function Dashboard() {
 
         {/* Module Roadmap */}
         <div className="mb-10">
-          <h2
-            className="font-['Barlow_Condensed'] font-700 text-white text-2xl mb-6"
-            style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700 }}
-          >
-            Module Roadmap
-          </h2>
+          <div className="signal-heading mb-7">
+            <h2
+              className="font-['Barlow_Condensed'] font-700 text-white text-2xl"
+              style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700 }}
+            >
+              Module Roadmap
+            </h2>
+          </div>
 
           <div className="space-y-4">
             {MODULES.map((mod) => {
@@ -161,7 +163,7 @@ export default function Dashboard() {
               return (
                 <div
                   key={mod.slug}
-                  className={`rounded-lg border p-5 transition-all ${
+                  className={`signal-tab-panel border p-5 transition-all ${
                     done
                       ? 'border-[oklch(0.85_0.25_135/30%)] bg-[oklch(0.85_0.25_135/5%)]'
                       : 'border-white/10 bg-[oklch(0.20_0.04_255)]'

@@ -142,3 +142,9 @@
 
 ## Selected Approach: Idea 3 — "Signal & Clarity"
 Bold Geometric Futurism with deep navy, electric blue, diagonal geometry, and strong typographic spine.
+
+## Style Decisions
+
+- Every major page uses at least one diagonal, tabbed, or stripe-based geometric device; conventional rounded panels remain secondary.
+- Barlow Condensed ExtraBold is the dominant voice for headlines, numerals, labels, and calls to action, with hierarchy driven by scale, weight, and left alignment.
+- Lime is reserved for primary actions, completion/progress signals, and key proof points; electric blue remains the structural color.
